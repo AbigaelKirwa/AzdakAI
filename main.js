@@ -39,6 +39,7 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 
+//makes page reload on scrolling
 AOS.init();
 
 
