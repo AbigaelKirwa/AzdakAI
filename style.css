@@ -864,6 +864,7 @@ input:focus, textarea:focus, select:focus{
         padding-right: 4em;
     }
 
+     
 }
 @media only screen and (max-width: 470px)
 {
@@ -1014,4 +1015,8 @@ input:focus, textarea:focus, select:focus{
     }
 
 }
+}
+@media only screen and (max-width: 379px)
+{
+    
 }
