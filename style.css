@@ -1016,7 +1016,10 @@ input:focus, textarea:focus, select:focus{
 
 }
 }
-@media only screen and (max-width: 379px)
+@media only screen and (max-height: 800px)
 {
-    
+    .container
+    {
+        height: 500vh;
+    }
 }
