@@ -82,7 +82,7 @@ img.imageone
     width: 30%; 
     height: 20vh;
     padding-left: 60%;
-    padding-top: 2%;
+    padding-top: 0%;
 }
 h1
 {
@@ -104,7 +104,7 @@ p
     width: 170%; 
     height: 10vh; 
     padding-left: 7%;
-    padding-top: 20%; 
+    padding-top: 13%; 
 }
 .wordsbuttons button
 {
@@ -121,7 +121,7 @@ p
 }
 button.signmeup
 {
-    margin-bottom: 5%;
+    margin-bottom: 3%;
 }
 #myBtn 
 {
