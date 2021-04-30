@@ -1,3 +1,4 @@
+html,body{height:100vh !important;width:100% !important; margin:0px; padding:0px;}
 *
 {
    margin: 0;
@@ -8,6 +9,7 @@
     width: 100%;
     height: 500vh;
     background-image: linear-gradient(240deg, #CF2E5D, #826ECE);
+    overflow: hidden;
 }
 .navbar
 {
@@ -362,29 +364,34 @@ input:focus, textarea:focus, select:focus{
 .bottomimage
 {
     width: 35%;
-    height: 60vh;
+    height: 50vh;
     padding-top: 10%;
     padding-left: 5%;
 }
+.bottomimage img
+{
+    width: 65%;
+    height: 100%;
+}
 .pagefivewords
 {
-    width: 50%;
-    height: 50%;
+    width: 40%;
+    height: 20%;
     padding-left: 50%;
-    margin-top: -25%;
+    margin-top: -20%;
     display: flex;
 }
 .usefullinks p, .needhelp p
 {
 
     color: #000000;
-    font-size: medium;
+    font-size: small;
     padding-right: 5em;
 }
 .contacts p
 {
     color: #000000;
-    font-size: medium;
+    font-size: small;
     padding-bottom: 50%;
 }
 .icons
@@ -401,7 +408,7 @@ input:focus, textarea:focus, select:focus{
 {
     .pagefivewords
     {
-        margin-top: -30%;
+        margin-top: -2  0%;
     }
     .pagefivewords p
     {
@@ -414,7 +421,7 @@ input:focus, textarea:focus, select:focus{
     .container
     {
         width: 100%;
-        height: 580vh;
+        height: 500vh;
     }
     .navbar button
     {
@@ -438,12 +445,22 @@ input:focus, textarea:focus, select:focus{
     }
     .pagefivewords
     {
-        margin-top: -40%;
+        margin-top: -30%;
     }
     .pagefivewords p
     {
         font-size: small;
     }
+
+    .login p.mainheading
+    {
+        padding-bottom: 25%;
+    }
+    .signup p.mainheading
+    {
+        padding-bottom: 15%;
+    }
+
 }
 @media screen and (max-width: 1080px)
 {
@@ -527,9 +544,25 @@ input:focus, textarea:focus, select:focus{
         padding-top: 4%;
         padding-left: 10%;
     }
+    .login p.mainheading
+    {
+        padding-bottom: 35%;
+    }
+    .signup p.mainheading
+    {
+        padding-bottom: 25%;
+    }
+    .pagefivewords
+    {
+        margin-top: -40%;
+    }
 }
 @media only screen and (max-width: 762px)
 {
+    .container
+    {
+        height: 450vh;
+    }
     .words
     {
         margin-top: -47%;
@@ -546,7 +579,7 @@ input:focus, textarea:focus, select:focus{
     }
     .pagefivewords
     {
-        margin-top: -50%;
+        margin-top: -40%;
         font-size: small;
     }
 }
@@ -555,7 +588,7 @@ input:focus, textarea:focus, select:focus{
     .container
     {
         width: 100%;
-        height: 600vh;
+        height: 550vh;
     }
     .mainImage
     {
@@ -721,6 +754,15 @@ input:focus, textarea:focus, select:focus{
     p.mainheading
     {
         padding-top: 10%;
+    } 
+    .login p.mainheading
+    {
+        padding-bottom: 25%;
+    }
+
+    .signup p.mainheading
+    {
+        padding-bottom: 15%;
     }
     .pagefivewords 
     {
@@ -753,7 +795,7 @@ input:focus, textarea:focus, select:focus{
     {
     .container
     {
-        height: 580vh;
+        height: 520vh;
     }
 
     .navbar
@@ -770,7 +812,7 @@ input:focus, textarea:focus, select:focus{
     }
     .pagefivewords
     {
-        margin-top: -30%;
+        margin-top: -40%;
     }
     .contacts p
     {
@@ -791,12 +833,20 @@ input:focus, textarea:focus, select:focus{
     {
         padding-bottom: 20%;
     }
+    .login p.mainheading
+    {
+        padding-bottom: 15%;
+    }
+    .signup p.mainheading
+    {
+        padding-bottom: 5%;
+    }
 }
 @media only screen and (max-width: 500px)
 {
     .container
     {
-        height: 540vh;
+        height: 500vh;
     }
     .navbar
     {
@@ -862,18 +912,23 @@ input:focus, textarea:focus, select:focus{
         color: #000000;
         font-size: medium;
         padding-right: 4em;
+        padding-bottom: 10%;
     }
 
      
 }
 @media only screen and (max-width: 470px)
 {
+    .container
+    {
+        height: 490vh;
+    }
     .pagefivewords 
     {
         margin-top: -50%;
         width: 20%;
         height: 50%;
-        padding-left: 10%;
+        padding-left: 15%;
     }
     .usefullinks p, .needhelp p
     {
@@ -895,7 +950,7 @@ input:focus, textarea:focus, select:focus{
 {
     .container
     {
-        height: 500vh;
+        height: 420vh;
     }
     .navbar
     {
