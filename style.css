@@ -365,7 +365,7 @@ input:focus, textarea:focus, select:focus{
 .bottomimage
 {
     width: 35%;
-    height: 70vh;
+    height: 60vh;
     padding-top: 10%;
     padding-left: 5%;
 }
@@ -379,7 +379,7 @@ input:focus, textarea:focus, select:focus{
     width: 40%;
     height: 20%;
     padding-left: 50%;
-    margin-top: -30%;
+    margin-top: -25%;
     display: flex;
 }
 .usefullinks p, .needhelp p
