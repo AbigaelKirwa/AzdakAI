@@ -10,6 +10,8 @@ html,body{height:100vh !important;width:100% !important; margin:0px; padding:0px
     height: auto;
     background-image: linear-gradient(240deg, #CF2E5D, #826ECE);
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 .pageone
 {
@@ -304,11 +306,18 @@ button.signmeup
     text-align: center;
     color: #FFFFFF;
 } 
+.itemsundersignup, .itemsunderlogin
+{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
 p.mainheading
 {
     color: #FFFFFF;
-    padding-top: 20%;
+    padding-top: 15%;
     font-size: 20px;
+    width: 100%;
 }
 
 p.description
@@ -320,11 +329,11 @@ p.description
 }
 .login p.mainheading
 {
-    padding-bottom: 15%;
+    padding-bottom: 20%;
 }
 .signup p.mainheading
 {
-    padding-bottom: 5%;
+    padding-bottom: 7%;
 }
 #email, #username, #password
 {
@@ -339,12 +348,14 @@ label
 {
     text-align: center;
     padding-top: 5%;
+    font-size: small;
 }
 #email, #username, #password {
     cursor: pointer;
     display: inline-block;
     position: relative;
     transition: 0.5s;
+    padding-top: 0%;
 }
 .pagefourbutton
 {
@@ -359,10 +370,11 @@ label
     border-style: solid;
     background-color: transparent;
     margin-top: 5%;
+    margin-left: 30%;
 }
 .login .pagefourbutton
 {
-    margin-top: 10%;
+    margin-top: 5%;
 }
 input:focus, textarea:focus, select:focus{
     outline: none;
@@ -381,6 +393,7 @@ input:focus, textarea:focus, select:focus{
     height: 60vh;
     padding-top: 10%;
     padding-left: 5%;
+
 }
 .bottomimage img
 {
@@ -449,15 +462,6 @@ input:focus, textarea:focus, select:focus{
     .pagefivewords p
     {
         font-size: small;
-    }
-
-    .login p.mainheading
-    {
-        padding-bottom: 25%;
-    }
-    .signup p.mainheading
-    {
-        padding-bottom: 15%;
     }
 
 }
@@ -529,14 +533,6 @@ input:focus, textarea:focus, select:focus{
     {
         padding-left: 0%;
         width: 210%;
-    }
-    .login p.mainheading
-    {
-        padding-bottom: 35%;
-    }
-    .signup p.mainheading
-    {
-        padding-bottom: 25%;
     }
 }
 @media only screen and (max-width: 762px)
@@ -725,16 +721,16 @@ input:focus, textarea:focus, select:focus{
     }
     p.mainheading
     {
-        padding-top: 10%;
+        padding-top: 5%;
     } 
     .login p.mainheading
     {
-        padding-bottom: 25%;
+        padding-bottom: 17%;
     }
 
     .signup p.mainheading
     {
-        padding-bottom: 15%;
+        padding-bottom: 9%;
     }
     .pagefivewords 
     {
@@ -745,18 +741,16 @@ input:focus, textarea:focus, select:focus{
     }
     .pagefivewords p
     {
-        margin-bottom: -25%;
-        padding-top: 52%;
         font-size: small;
     }
     .contacts p
     {
-        padding-bottom: 100%;
-        margin-top: 75%;
+        padding-bottom: 60%;
+        margin-top: 9%;
     }
     #fafaicon
     {
-        padding-bottom: 75%;
+        padding-bottom: 40%;
     }
     .signup
     {
@@ -778,16 +772,6 @@ input:focus, textarea:focus, select:focus{
         width: 15%;
         font-size: smaller;
     }
-    .pagefivewords
-    {
-        margin-top: -40%;
-    }
-    .contacts p
-    {
-        padding-bottom: 50%;
-        margin-top: 50%;
-
-    }
     .pagefivewords p
     {
         font-size: small;
@@ -797,17 +781,14 @@ input:focus, textarea:focus, select:focus{
     {
         font-size: medium;
     }
+    .contacts p
+    {
+        margin-top: 50%;
+        padding-bottom: 100%;
+    }
     #fafaicon
     {
-        padding-bottom: 20%;
-    }
-    .login p.mainheading
-    {
-        padding-bottom: 25%;
-    }
-    .signup p.mainheading
-    {
-        padding-bottom: 15%;
+        padding-bottom: 80%;
     }
 }
 @media only screen and (max-width: 500px)
