@@ -535,7 +535,7 @@ input:focus, textarea:focus, select:focus{
         padding-bottom: 20%;
     }
 
-
+}
 @media only screen and (max-width: 905px)
 {
     .navbar
@@ -1070,4 +1070,4 @@ input:focus, textarea:focus, select:focus{
     }
 
 }
-}
+
