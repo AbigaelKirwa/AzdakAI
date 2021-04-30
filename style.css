@@ -11,6 +11,16 @@ html,body{height:100vh !important;width:100% !important; margin:0px; padding:0px
     background-image: linear-gradient(240deg, #CF2E5D, #826ECE);
     overflow: hidden;
 }
+.pageone
+{
+    width:100%;
+    height:100vh;
+}
+.imageandwords
+{
+    display: flex;
+    height: auto;
+}
 
 .navbar
 {
@@ -18,6 +28,7 @@ html,body{height:100vh !important;width:100% !important; margin:0px; padding:0px
     height: 10vh;
     padding-top: 4%;
     padding-left: 5%;
+    display: flex;
 }
 .navbar button
 {
@@ -58,7 +69,8 @@ button:hover span:after {
     width: 40%; 
     height: 65vh;
     padding-top: 5%;
-    padding-left: 10%;
+    padding-left: 7%;
+    position: absolute;
 }
 img.imageone
 {
@@ -70,7 +82,7 @@ img.imageone
     width: 30%; 
     height: 20vh;
     padding-left: 60%;
-    margin-top: -36%;
+    padding-top: 2%;
 }
 h1
 {
@@ -89,15 +101,14 @@ p
 }
 .wordsbuttons
 {
-    width: 20%; 
+    width: 170%; 
     height: 10vh; 
-    margin-top: 0px;
-    padding-left: 60%;
-    padding-top: 13%; 
+    padding-left: 7%;
+    padding-top: 20%; 
 }
 .wordsbuttons button
 {
-    width: 150%;
+    width: 50%;
     height: 8vh;
     font-size: large;
     color: #FFFFFF;
@@ -138,7 +149,7 @@ button.signmeup
 {
     padding-left: 53%;
     padding-right: 10%;
-    margin-top: 20%;
+    margin-top: 10%;
 }
 .headingpagetwo h1
 {
@@ -407,6 +418,13 @@ input:focus, textarea:focus, select:focus{
 {
     padding-bottom: 25%;
 }
+@media only screen and (max-width: 1380px)
+{
+    .words
+    {
+        padding-top: 5%;
+    }
+}
 @media only screen and (max-width: 1110px)
 {
     .navbar button
@@ -414,11 +432,6 @@ input:focus, textarea:focus, select:focus{
         width: 17%;
         height: 8vh;
         margin-inline-start: 10px;
-    }
-    .words
-    {
-        margin-top: -43%;
-        padding-top: 5%;
     }
     h1
     {
@@ -428,6 +441,10 @@ input:focus, textarea:focus, select:focus{
     {
         padding-top: 5vh;
         font-size: 25px;
+    }
+    .wordsbuttons
+    {
+        width: 200%;
     }
     .pagefivewords p
     {
@@ -470,11 +487,6 @@ input:focus, textarea:focus, select:focus{
         margin-inline-start: 10px;
         font-size: medium;
     }
-    .words
-    {
-        margin-top: -48%;
-        padding-top: 5%;
-    }
     h1
     {
         font-size: 30px;
@@ -509,6 +521,15 @@ input:focus, textarea:focus, select:focus{
         padding-top: 4%;
         padding-left: 10%;
     }
+    .words
+    {
+        padding-top: 10%;
+    }
+    .wordsbuttons
+    {
+        padding-left: 0%;
+        width: 210%;
+    }
     .login p.mainheading
     {
         padding-bottom: 35%;
@@ -521,11 +542,6 @@ input:focus, textarea:focus, select:focus{
 @media only screen and (max-width: 762px)
 {
 
-    .words
-    {
-        margin-top: -47%;
-        padding-top: 0%;
-    }
     h1
     {
         font-size: 25px;
@@ -552,25 +568,29 @@ input:focus, textarea:focus, select:focus{
     }
     .words
     {
-        padding-top: 55%;
-        padding-left: 30%;
+        padding-top: 15%;
+        padding-left: 25%;
     }
-    h1
+    .pageone h1
     {
-        font-size: 30px;
+        font-size: 40px;
+        padding-left: 35%;
+        width: 100%;
     }
-    p
+    .pageone p
     {
         padding-top: 10vh;
         font-size: 20px;
+        padding-left: 35%;
+        width: 100%;
     }
     .wordsbuttons
     {
-        width: 50%; 
+        width: 400%; 
         height: 10vh; 
         margin-top: 15%;
         margin-left: -15%;
-        padding-left: 27%;
+        padding-left: 0%;
         padding-top: 13%; 
     }
     .pagefivewords
@@ -803,11 +823,6 @@ input:focus, textarea:focus, select:focus{
     {
         width: 15%;
         font-size: x-small;
-    }
-    .words
-    {
-        padding-top: 55%;
-        padding-left: 35%;
     }
     h1
     {
