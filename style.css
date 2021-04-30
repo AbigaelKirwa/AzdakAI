@@ -11,6 +11,7 @@ html,body{height:100vh !important;width:100% !important; margin:0px; padding:0px
     background-image: linear-gradient(240deg, #CF2E5D, #826ECE);
     overflow: hidden;
 }
+
 .navbar
 {
     width: 50%; 
@@ -360,6 +361,7 @@ input:focus, textarea:focus, select:focus{
   margin-top: 0%;
   padding: 3%;
   padding-bottom: 20%;
+  display: flex;
 
 }
 .bottomimage
@@ -378,8 +380,8 @@ input:focus, textarea:focus, select:focus{
 {
     width: 40%;
     height: 20%;
-    padding-left: 50%;
-    margin-top: -25%;
+    padding-left: 10%;
+    padding-top: 18%;
     display: flex;
 }
 .usefullinks p, .needhelp p
@@ -405,18 +407,6 @@ input:focus, textarea:focus, select:focus{
 {
     padding-bottom: 25%;
 }
-@media only screen and (max-width: 1200px)
-{
-    .pagefivewords
-    {
-        margin-top: -2  0%;
-    }
-    .pagefivewords p
-    {
-        font-size: small;
-    }
-
-}
 @media only screen and (max-width: 1110px)
 {
     .navbar button
@@ -434,14 +424,10 @@ input:focus, textarea:focus, select:focus{
     {
         font-size: 50px;
     }
-    p
+    .pageone p
     {
         padding-top: 5vh;
         font-size: 25px;
-    }
-    .pagefivewords
-    {
-        margin-top: -30%;
     }
     .pagefivewords p
     {
@@ -460,10 +446,6 @@ input:focus, textarea:focus, select:focus{
 }
 @media screen and (max-width: 1080px)
 {
-    .pagefivewords
-    {
-        margin-top: -25%;
-    }
     .pagefivewords p
     {
         font-size: small;
@@ -502,15 +484,6 @@ input:focus, textarea:focus, select:focus{
         padding-top: 5vh;
         font-size: 25px;
     }
-    .pagefivewords
-    {
-        margin-top: -30%;
-    }
-    .contacts p
-    {
-        padding-bottom: 30%;
-
-    }
     p.description
     {
         padding-top: 10%;
@@ -520,6 +493,7 @@ input:focus, textarea:focus, select:focus{
     .pagefivewords p
     {
         font-size: small;
+        padding-bottom: 5%;
     }
     #fafaicon
     {
@@ -543,10 +517,6 @@ input:focus, textarea:focus, select:focus{
     {
         padding-bottom: 25%;
     }
-    .pagefivewords
-    {
-        margin-top: -40%;
-    }
 }
 @media only screen and (max-width: 762px)
 {
@@ -567,7 +537,6 @@ input:focus, textarea:focus, select:focus{
     }
     .pagefivewords
     {
-        margin-top: -40%;
         font-size: small;
     }
 }
