@@ -1,10 +1,9 @@
-
+html,body{height:100vh !important;width:100% !important; margin:0px; padding:0px;}
 *
 {
    margin: 0;
    padding: 0;
 }
-
 .container
 {
     width: 100%;
@@ -18,14 +17,11 @@
 {
     width:100%;
     height:100vh;
-    position: absolute;
 }
 .imageandwords
 {
-    height: 80vh;
-    width: 100%;
-    flex-direction: row;
     display: flex;
+    height: auto;
 }
 
 .navbar
@@ -72,25 +68,23 @@ button:hover span:after {
 }
 .mainImage
 {
-    width: 35%; 
-    height: 10vh;
+    width: 40%; 
+    height: 65vh;
     padding-top: 5%;
-    padding-left: 10%;
+    padding-left: 7%;
     position: absolute;
-    float: right;
 }
 img.imageone
 {
     width: 100%;
-    height: auto;
+    height: 65vh;
 }
 .words
 {
-    width: 100%; 
+    width: 30%; 
     height: 20vh;
     padding-left: 60%;
-    padding-right: 10%;
-    padding-top: 15%;
+    padding-top: 0%;
 }
 h1
 {
@@ -109,15 +103,14 @@ p
 }
 .wordsbuttons
 {
-    width: 100%; 
+    width: 170%; 
     height: 10vh; 
-    padding-left: 0%;
+    padding-left: 7%;
     padding-top: 13%; 
-    margin-bottom:30%;
 }
 .wordsbuttons button
 {
-    width: 100%;
+    width: 50%;
     height: 8vh;
     font-size: large;
     color: #FFFFFF;
@@ -154,23 +147,11 @@ button.signmeup
 {
     background-color: rgb(163, 157, 157);
 }
-#pagetwomodal
-{
-    height: 100vh;
-    width: 100%;
-}
-.pagetwo
-{
-    height: auto;
-    width: 100%;
-    margin-top: 50%
-}
 .headingpagetwo
 {
-    padding-left: 20%;
-    padding-top: 5%;
-    height: 10vh;
-    width: 100%;
+    padding-left: 53%;
+    padding-right: 10%;
+    margin-top: 10%;
 }
 .headingpagetwo h1
 {
@@ -179,37 +160,24 @@ button.signmeup
     text-align: center;
     font-size: 30px;
 }
-.pagetwocontent
-{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: auto;
-}
 .pagetwoimage1
 {
-    width: 7%;
-    height: 10vh;
-    padding-left: 7%;
-    padding-top: 3%;
-    position: absolute;
+    width: 20%;
+    height: 20%;
+    padding-left: 5%;
+    padding-top: 0%;
 }
 .imagetwo
 {
-    width: 100%;
-    height: auto;
-}
-.opiniononeenclose
-{
-    width: 30%;
-    height: 40vh;
+    width: 40%;
+    height: 30%;
 }
 .opinionone
 {
-   width: 100%; 
-   height: auto; 
-   margin-top: 17%;
-   margin-left:30%;
+   width: 30%; 
+   height: 40vh; 
+   margin-top: -5%;
+   margin-left:7%;
    background-color: #FFFFFF;
    border-radius: 50px 50px 50px 50px;
    
@@ -221,28 +189,22 @@ button.signmeup
     font-size: medium;
     padding-left: 30%;
     padding-right: 30%;
-    padding-top: 15%;
-    padding-bottom: 15%;
-}
-.opiniontwoenclose
-{
-    width: 30%;
-    height: 40vh;
+    padding-top: 20%;
 }
 .pagetwoimage2
 {
-    width: 7%;
-    height: 50vh;
-    padding-left: 83%;
-    padding-top: 16%;
-    position: absolute;
+    width: 20%;
+    height: 20%;
+    padding-left: 80%;
+    margin-top: -5%;
+    
 }
 .opiniontwo
 {
-   width: 100%; 
-   height: auto; 
-   margin-top: 60%;
-   margin-left:95%;
+   width: 30%; 
+   height: 40vh; 
+   margin-top: -5%;
+   margin-left:57%;
    background-color: #FFFFFF;
    border-radius: 50px 50px 50px 50px;
    
@@ -254,15 +216,13 @@ button.signmeup
     font-size: medium;
     padding-left: 30%;
     padding-right: 30%;
-    padding-top: 15%;
-    padding-bottom: 15%;
+    padding-top: 20%;
 }
 .imagethree
 {
-    width: 100%;
-    height: auto;
+    width: 40%;
+    height: 30%;
 }
-/*if you need to erase the display flex is the last to go */
 .headingpagethree
 {
     padding-top: 5%;
@@ -438,7 +398,7 @@ input:focus, textarea:focus, select:focus{
 .bottomimage img
 {
     width: 65%;
-    height: auto;
+    height: 100%;
 }
 .pagefivewords
 {
@@ -477,11 +437,6 @@ input:focus, textarea:focus, select:focus{
     {
         padding-top: 5%;
     }
-    .pagetwo
-    {
-        margin-top: 55%;
-    }
-
 }
 @media only screen and (max-width: 1110px)
 {
@@ -499,6 +454,10 @@ input:focus, textarea:focus, select:focus{
     {
         padding-top: 5vh;
         font-size: 25px;
+    }
+    .wordsbuttons
+    {
+        width: 200%;
     }
     .pagefivewords p
     {
@@ -568,19 +527,12 @@ input:focus, textarea:focus, select:focus{
     }
     .words
     {
-        padding-top: 5%;
+        padding-top: 10%;
     }
-    .words button
+    .wordsbuttons
     {
-        height:6vh;
-    }
-    .mainImage
-    {
-        padding-top: 7%;
-    }
-    .pagetwo
-    {
-        margin-top: 50%;
+        padding-left: 0%;
+        width: 210%;
     }
 }
 @media only screen and (max-width: 762px)
@@ -613,26 +565,27 @@ input:focus, textarea:focus, select:focus{
     .words
     {
         padding-top: 15%;
-        padding-left: 35%;
+        padding-left: 25%;
     }
     .pageone h1
     {
         font-size: 40px;
-        width: 50%;
+        padding-left: 35%;
+        width: 100%;
     }
     .pageone p
     {
         padding-top: 10vh;
         font-size: 20px;
-        padding-right: 10%;
-        width: 50%;
+        padding-left: 35%;
+        width: 100%;
     }
     .wordsbuttons
     {
-        width: 100%; 
+        width: 400%; 
         height: 10vh; 
-        margin-top: 10%;
-        margin-left: -25%;
+        margin-top: 15%;
+        margin-left: -15%;
         padding-left: 0%;
         padding-top: 13%; 
     }
@@ -656,7 +609,7 @@ input:focus, textarea:focus, select:focus{
     }
     .headingpagetwo
     {
-        padding-left: 0%;
+        padding-left: 10%;
         padding-right: 10%;
         margin-top: 20%;
     }
@@ -664,55 +617,42 @@ input:focus, textarea:focus, select:focus{
     {
         font-size: 30px;
     }
-    .pagetwo
-    {
-        padding-top: 10%;
-    }
     .pagetwoimage1
     {
-        width: 20%;
-        height: 10vh;
-        padding-left: 15%;
-        padding-top: 10%;
-        position: absolute;
-    }
-    .opiniononeenclose
-    {
-        width: 50%;
+        width: 40%;
+        height: 40%;
+        padding-left: 18%;
+        padding-top: 3%;
     }
     .opinionone
     {
-       width: 100%; 
-       height: auto; 
-       margin-top: 35%;
-       margin-left:45%;
-       background-color: #FFFFFF;
-       border-radius: 50px 50px 50px 50px;
+       width: 50%; 
+       height: 30vh; 
+       margin-top: -7%;
+       margin-left:18%;
+       
+    }
+    .opinionone p
+    {
+        padding-top: 10%;
     }
     .pagetwoimage2
     {
-        width: 20%;
-        height: 10vh;
-        padding-left: 15%;
-        padding-top: 57%;
-        position: absolute;
-    }
-    .opiniontwoenclose
-    {
-        width: 50%;
+        width: 40%;
+        height: 40%;
+        padding-left: 60%;
+        margin-top: 5%;
     }
     .opiniontwo
     {
-       width: 100%; 
-       height: auto; 
-       margin-top: 130%;
-       margin-left:-57%;
-       background-color: #FFFFFF;
-       border-radius: 50px 50px 50px 50px;
+       width: 50%; 
+       height: 30vh; 
+       margin-top: -8%;
+       margin-left:18%;
     }
-    .pagethree
+    .opiniontwo p
     {
-        margin-top: 5%;
+        padding-top: 10%;
     }
     .headingpagethree
     {
@@ -850,17 +790,6 @@ input:focus, textarea:focus, select:focus{
     {
         padding-bottom: 80%;
     }
-    .pagetwo
-    {
-        margin-top: 50%;
-    }
-}
-@media only screen and (max-width: 579px)
-{
-    .pagetwo
-    {
-        margin-top: 80%;
-    }
 }
 @media only screen and (max-width: 500px)
 {
@@ -884,10 +813,6 @@ input:focus, textarea:focus, select:focus{
     {
         padding-top: 10vh;
         font-size: 15px;
-    }
-    .pagetwo
-    {
-        padding-top: 50%;
     }
     .pagefour
     {
@@ -957,25 +882,6 @@ input:focus, textarea:focus, select:focus{
     }
 
 }
-@media only screen and (max-width: 448px)
-{
-   .pagetwo
-   {
-       margin-top: 70%;
-   }
-   .pagetwoimage2
-   {
-       padding-top: 70%;
-   }
-   .opiniontwo
-   {
-       margin-top: 155%;
-   }
-   .pagethree
-   {
-       margin-top: 70%;
-   }
-}
 @media only screen and (max-width: 379px)
 {
     .navbar
@@ -1012,6 +918,17 @@ input:focus, textarea:focus, select:focus{
     .usefullinks p, .needhelp p
     {
         padding-right: 2em;
+    }
+    .opiniontwo p, .opinionone p
+    {
+        font-size: small;
+        padding-left: 20%;
+        padding-right: 20%;
+        padding-top: 20%;
+    }
+   .pagetwoimage2
+    {
+        padding-left: 53%;
     }
     .contacts p
     {
@@ -1051,13 +968,37 @@ input:focus, textarea:focus, select:focus{
         font-size: x-small;
         padding-bottom: 90%;
     }
+    .pagetwoimage1
+    {
+        width: 60%;
+        height: 60%;
+        padding-left: 15%;
+        padding-top: 8%;
+    }
+    .opinionone
+    {
+       width: 70%; 
+       height: 30vh; 
+       margin-top: -11%;
+       margin-left:18%;
+    }
+    .pagetwoimage2
+    {
+        width: 60%;
+        height: 60%;
+        padding-left: 15%;
+        margin-top: 15%;
+    }
+    .opiniontwo
+    {
+       width: 70%; 
+       height: 30vh; 
+       margin-top: -10%;
+       margin-left:18%;
+    }
     .signup
     {
         margin-top: 20%;
     }
-    .pagetwo
-    {
-        margin-top: 50%;
-    }
-}
 
+}
