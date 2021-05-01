@@ -11,6 +11,7 @@
 </head>
 <body data-aos-easing="ease" data-aos-duration="1000" data-aos-delay="0" data-new-gr-c-s-check-loaded="14.1007.0" data-gr-ext-installed="">
     <div id="container"class="container">
+        <div class="pageone">
         <div class="navbar">
             <button id="homebtn" onClick="parent.location='#container'" value='click here'><span>Home</span></button>
             <button onClick="parent.location='#pagetwo'" value='click here'><span>Socials</span></button>
@@ -18,45 +19,56 @@
             <button onClick="parent.location='#signup'" value='click here'><span>Sign Up</span></button>
             <button onClick="parent.location='#usefullinks'" value='click here'><span>Contacts</span></button>
         </div>
+        <div class="imageandwords">
         <div class="mainImage">
             <img class="imageone" src="https://res.cloudinary.com/due79afep/image/upload/v1619522684/homeImage_sbo9yg.png" alt="main image">
         </div>   
         <div class="words">
             <h1>Azdak AI</h1>
             <p>Welcome to Azdak AI. The home of all things tech.</p>
+            <div class="wordsbuttons">
+                <button class="signmeup" onClick="parent.location='#signup'" value='click here'><span>Sign Me Up!</span></button>
+                <button onClick="parent.location='#login'" value='click here'><span>Login</span></button>
+        </div>
     </div>
-     <div class="wordsbuttons">
-        <button class="signmeup" onClick="parent.location='#signup'" value='click here'><span>Sign Me Up!</span></button>
-        <button onClick="parent.location='#login'" value='click here'><span>Login</span></button>
+
+</div>
 </div>
 <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 <div id="pagetwo" class="pagetwo">
-<!--START OF MODAL-->
-<div class="modal aos-init aos-animate" data-aos="fade-down">
+    <!--START OF MODAL-->
+<div class="modal aos-init aos-animate" data-aos="fade-down" id="pagetwomodal">
 <div id="headingpagetwo" class="headingpagetwo">
     <h1>What do our clients have to say about us?</h1>
 </div>
+<div class="pagetwocontent">
 <div class="pagetwoimage1">
     <img class="imagetwo" src="https://res.cloudinary.com/due79afep/image/upload/v1619533318/Mask_Group_1_t4i4e3.png" alt="lady's picture">
 </div>
+<div class="opiniononeenclose">
 <div id="opinionone" class="opinionone">
     <p>Working with Azdak has been phenomenal. 5/5 rating</p>
+</div>
 </div>
 <div class="pagetwoimage2">
     <img class="imagethree" src="https://res.cloudinary.com/due79afep/image/upload/v1619533332/Mask_Group_2_aqhwdz.png" alt="man's picture">
 </div>
+<div class="opiniontwoenclose">
 <div class="opiniontwo" >
     <p>Working with Azdak has been phenomenal. 3/5 rating</p>
+</div>
+</div>
 </div>
 </div>
 </div>
 <!--END OF MODAL-->
 <div id="pagethree" class="pagethree">
 <!--START OF MODAL-->
-<div class="modal aos-init aos-animate" data-aos="fade-up" data-aos-duration="3000">
+<div class="modal aos-init aos-animate" data-aos="fade-up" data-aos-duration="3000" id="pagethreemodal">
 <div id="headingpagethree" class="headingpagethree">
     <h1>What services do we offer?</h1>
 </div>
+<div class="pagethreecontent">
 <div id="pagethreeimageone" class="pagethreeimageone">
     <img class="imagefour" src="https://res.cloudinary.com/due79afep/image/upload/v1619540100/Mask_Group_3_ovuqia.png">   
     <img class="imagefive" src="https://res.cloudinary.com/due79afep/image/upload/v1619540100/Mask_Group_5_tq3wdb.png">   
@@ -79,11 +91,13 @@
 </div>
 </div>
 </div>
+</div>
 <!--END OF MODAL-->
 <!--START OF MODAL-->
 <div class="modal aos-init aos-animate" data-aos="fade-down" data-aos-duration="2000">
 <div id="pagefour" class="pagefour">
     <div id="signup" class="signup">
+        <div class="itemsundersignup">
         <p class="mainheading">SIGN ME UP</p>
         <form>
             <label for="email"><span>EMAIL:</span></label><br>
@@ -95,7 +109,9 @@
       </form>
       <button class="pagefourbutton" type="submit" onClick="parent.location='#'" value='click here'><span>Sign Up</span></button>
     </div>
+</div>
     <div id="login" class="login">
+        <div class="itemsunderlogin">
         <p class="mainheading">LOGIN</p>
         <form>
             <label for="Username"><span>USERNAME:</span></label><br>
@@ -105,6 +121,7 @@
         </form>
         <button class="pagefourbutton" type="submit" onClick="parent.location='#'" value='click here'><span>Log In</span></button>
     </div>
+</div>
 </div>
 </div>
 <!--END OF MODAL-->
@@ -142,7 +159,6 @@
 </div>
 </div>
 <!--END OF MODAL-->
-
 <!--AOS-->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
