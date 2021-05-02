@@ -1,4 +1,4 @@
-html,body{height:100vh !important;width:100% !important; margin:0px; padding:0px;}
+
 *
 {
    margin: 0;
@@ -7,7 +7,7 @@ html,body{height:100vh !important;width:100% !important; margin:0px; padding:0px
 .container
 {
     width: 100%;
-    height: auto;
+    height: 500vh;
     background-image: linear-gradient(240deg, #CF2E5D, #826ECE);
     overflow: hidden;
     display: flex;
