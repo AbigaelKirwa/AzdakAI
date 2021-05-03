@@ -1,40 +1,41 @@
-
-*
+*, ::after, ::before
 {
-   margin: 0;
-   padding: 0;
+    margin: 0;
+    padding: 0;
 }
+
 .container
 {
     width: 100%;
-    height: auto;
-    background-image: linear-gradient(240deg, #CF2E5D, #826ECE);
-    overflow: hidden;
+    overflow-x: hidden;
     display: flex;
     flex-direction: column;
+    background-image: linear-gradient(240deg, #CF2E5D, #826ECE);
+    z-index: 1;
+    position: relative;
 }
 .pageone
 {
-    width:100%;
-    height:100vh;
-}
-.imageandwords
-{
-    display: flex;
+    width: 100%;
     height: auto;
+    display: flex;
+    flex-direction: column;
 }
-
 .navbar
 {
-    width: 50%; 
+    width: 50%;
     height: 10vh;
-    padding-top: 4%;
-    padding-left: 5%;
     display: flex;
+    justify-content: space-evenly;
+    padding-top: 3%;
+    padding-bottom:3%;
 }
 .navbar button
 {
     width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 8vh;
     font-size: large;
     color: #FFFFFF;
@@ -44,16 +45,14 @@
     border-color: #FFFFFF;
     border-style: solid;
     background-color: transparent;
-    margin-inline-start: 17px;
+    margin-inline-start: 5px;
 }
 button span {
     cursor: pointer;
     display: inline-block;
-    position: relative;
     transition: 0.5s;
 }
 button span:after {
-    position: absolute;
     opacity: 0;
     top: 0;
     right: -20px;
@@ -66,51 +65,65 @@ button:hover span:after {
     opacity: 1;
     right: 0;
 }
+.imageandwords
+{
+    display: flex;
+    flex-direction: row;
+}
 .mainImage
 {
-    width: 40%; 
-    height: 65vh;
+    width: 40%;
+    flex: 1;
+}
+.mainImage img
+{
+    padding-left: 16%;
     padding-top: 5%;
-    padding-left: 7%;
-    position: absolute;
+
 }
 img.imageone
 {
-    width: 100%;
-    height: 65vh;
+    width: 90%;
+    height: auto;
 }
-.words
+.words 
 {
-    width: 30%; 
-    height: 20vh;
-    padding-left: 60%;
-    padding-top: 0%;
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20%;
+    flex: 1;
+    padding-top: 3%;
 }
-h1
+.pageone h1
 {
+    margin-left: 10%;
     color: #FFFFFF;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-align: center;
-    font-size: 70px;
+    font-size: 60px;
+    width: 50%;
+
 }
-p
+.pageone p
 {
+    width: 70%;
     padding-top: 2vh;
     color: #FFFFFF;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-align: center;
     font-size: 30px;
+    padding-bottom: 10vh;
 }
 .wordsbuttons
 {
-    width: 170%; 
-    height: 10vh; 
-    padding-left: 7%;
-    padding-top: 13%; 
+    display: flex;
+    flex-direction: column;
 }
 .wordsbuttons button
 {
-    width: 50%;
+    width: 70%;
     height: 8vh;
     font-size: large;
     color: #FFFFFF;
@@ -147,219 +160,223 @@ button.signmeup
 {
     background-color: rgb(163, 157, 157);
 }
+.pagetwo
+{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    padding-top: 5%;
+}
+#pagetwomodal
+{
+    width: 100%;
+    height: auto;
+}
 .headingpagetwo
 {
-    padding-left: 53%;
-    padding-right: 10%;
-    margin-top: 10%;
+    padding-right:5%;
 }
-.headingpagetwo h1
+.pagetwo h1
 {
-    color: #FFFFFF;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    text-align: center;
-    font-size: 30px;
+   display: flex;
+   justify-content: flex-end;
+   color: #FFFFFF;
+   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   font-size: 30px;
+}
+.pagetwocontent
+{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+.pagetwopartone
+{
+    width: 30%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    padding-left: 7%;
+}
+.pagetwoparttwo
+{
+    width: 30%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-left: 55%;
+}
+.pagetwo img
+{
+    width: 45%;
+    height: auto;
 }
 .pagetwoimage1
 {
-    width: 20%;
-    height: 20%;
-    padding-left: 5%;
-    padding-top: 0%;
-}
-.imagetwo
-{
-    width: 40%;
-    height: 30%;
+    padding-left: 10%;
 }
 .opinionone
 {
-   width: 30%; 
-   height: 40vh; 
-   margin-top: -5%;
-   margin-left:7%;
-   background-color: #FFFFFF;
-   border-radius: 50px 50px 50px 50px;
-   
-}
-.opinionone p
-{
-    color: #826ECE;
-    text-align: center;
-    font-size: medium;
-    padding-left: 30%;
-    padding-right: 30%;
-    padding-top: 20%;
-}
-.pagetwoimage2
-{
-    width: 20%;
-    height: 20%;
-    padding-left: 80%;
-    margin-top: -5%;
-    
+    margin-top: 15%;
+    margin-left: -65%;
 }
 .opiniontwo
 {
-   width: 30%; 
-   height: 40vh; 
-   margin-top: -5%;
-   margin-left:57%;
-   background-color: #FFFFFF;
-   border-radius: 50px 50px 50px 50px;
-   
+    margin-top: 15%;
+    margin-left: -60%;
 }
-.opiniontwo p
+.opinionone, .opiniontwo
+{
+    background-color: #FFFFFF;
+    border-radius: 50px 50px 50px 50px;
+    padding: 20%;
+    width: 50%;
+
+}
+.opinionone p, .opiniontwo p
 {
     color: #826ECE;
     text-align: center;
     font-size: medium;
-    padding-left: 30%;
-    padding-right: 30%;
-    padding-top: 20%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-.imagethree
+.pagethree
 {
-    width: 40%;
-    height: 30%;
-}
-.headingpagethree
-{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
     padding-top: 5%;
-    padding-left: 25%;
-    width: 50%;
-    height: 10%;
 }
-.headingpagethree h1
+#pagethreemodal
 {
+    width: 100%;
+    height: auto;
+}
+.pagethree h1
+{
+    padding-bottom: 5%;
     color: #FFFFFF;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-align: center;
     font-size: 30px;
 }
-.pagethreeimageone
+.pagethreecontent
 {
-    padding-top: 5%;
+    display: flex;
+    flex-direction: column;
 }
-.pagethreeimageone img
+.pagethreeimageone, .pagethreeimagetwo
 {
-    width: 7%;
-    height: 10%;
-    display: inline;
-    margin-inline-start: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.pagethreeimagetwo
+{
+    padding-top: 7%;
+}
+img.imagefive
+{
+    width: 10%;
+    height: 10vh;
+    padding-top: 3%;
+}
+img.imagefour, img.imagesix
+{
+    width: 8%;
+    height: auto;
 }
 .pagethreetext
 {
-   width: 30%;
-   height: 20%;
-   margin-top: 0%;
-   display: flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 .pagethreetextone, .pagethreetexttwo, .pagethreetextthree
 {
-    margin-top: 3%;
-    margin-left: 65%;
-    margin-right: 20%;
+    padding-top: 3%;
     width: 10%;
-    height: 10%;
+    height: 20%;
 }
 .pagethreetext p
 {
     font-size: larger;
     text-align: center;
-}
-
-.pagethreeimagetwo
-{
-    padding-top: 3%;
-}
-.pagethreeimagetwo img
-{
-    width: 7%;
-    height: 10%;
-    display: inline;
-    margin-inline-start: 20%;
+    color: #FFFFFF;
+    color: #FFFFFF;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .pagefour
-{
-    padding-top: 15%;
-    padding-left: 9%;
+{ 
+    width: 100%;
+    height: auto;
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 10%;
 }
 .signup
 {
-    width: 35%;
-    height: 70vh;
     background-color: rgba(205, 196, 196, 0.56);
     border-radius: 21%;
     text-align: center;
     color: #FFFFFF;
-    margin-right: 20%;
+    padding-top: 5%;
+    padding-bottom: 10%;
+    padding-left: 11%;
+    padding-right: 11%;
+    height: fit-content;
 }
 .login
 {
-    width: 35%;
-    height: 70vh;
     background: rgba(230, 99, 138, 0.45);
     border-radius: 21%;
     text-align: center;
     color: #FFFFFF;
+    padding-top: 5%;
+    padding-bottom: 10%;
+    padding-left: 11%;
+    padding-right: 11%;
+    height: fit-content;
 } 
-.itemsundersignup, .itemsunderlogin
+.itemsundersignup,.itemsunderlogin
 {
     display: flex;
     flex-direction: column;
-    height: auto;
 }
-p.mainheading
+.itemsundersignup form
 {
-    color: #FFFFFF;
-    padding-top: 15%;
-    font-size: 20px;
-    width: 100%;
-}
-
-p.description
-{
-    color: #FFFFFF;
-    padding-top: 15%;
-    font-size: 20px;
-    margin-left: -50%;
-}
-.login p.mainheading
-{
+    padding-top: 20%;
     padding-bottom: 20%;
 }
-.signup p.mainheading
+.itemsunderlogin form
 {
-    padding-bottom: 7%;
+    padding-top: 40%;
+    padding-bottom: 30%;
+}
+.pagefour .mainheading
+{
+    color: #FFFFFF;
+    font-size: x-large;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
 }
 #email, #username, #password
 {
-      border: transparent;
-      background-color: transparent;
-      border-bottom: 2px solid #707070;
-      margin-bottom: 5%;
-      text-align: center;
-      padding-top: 2%;
-}
-label
-{
+    border: transparent;
+    background-color: transparent;
+    border-bottom: 2px solid #707070;
+    margin-bottom: 5%;
     text-align: center;
     padding-top: 5%;
-    font-size: small;
-}
-#email, #username, #password {
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    transition: 0.5s;
-    padding-top: 0%;
 }
 .pagefourbutton
 {
-    width: 40%;
+    width: 100%;
     height: 8vh;
     font-size: large;
     color: #FFFFFF;
@@ -369,190 +386,88 @@ label
     border-color: #FFFFFF;
     border-style: solid;
     background-color: transparent;
-    margin-top: 5%;
-    margin-left: 30%;
-}
-.login .pagefourbutton
-{
-    margin-top: 5%;
 }
 input:focus, textarea:focus, select:focus{
     outline: none;
 }
+input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, input:-webkit-autofill:active 
+{
+    transition: background-color 5000s ease-in-out 0s;
+}
+label
+{
+    text-align: center;
+    font-size: medium;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
 .pagefive
 {
-  margin-top: 0%;
-  padding: 3%;
-  padding-bottom: 20%;
-  display: flex;
-
-}
-.bottomimage
-{
-    width: 35%;
-    height: 60vh;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
     padding-top: 10%;
-    padding-left: 5%;
-
+    padding-bottom: 10%;
 }
-.bottomimage img
+.lastimage
 {
-    width: 65%;
-    height: 100%;
+    width: 40%;
+    height: auto;
 }
 .pagefivewords
 {
-    width: 40%;
-    height: 20%;
-    padding-left: 10%;
-    padding-top: 18%;
     display: flex;
+    flex-direction: row;
+    width: 50%;
+    height: auto;
+    justify-content: space-evenly;
+    padding-top: 5%;
+    text-align: center;
 }
-.usefullinks p, .needhelp p
+img.bottomimage
 {
-
-    color: #000000;
-    font-size: small;
-    padding-right: 5em;
-}
-.contacts p
-{
-    color: #000000;
-    font-size: small;
-    padding-bottom: 50%;
+    width: 70%;
+    height: auto;
+    padding-left: 20%;
 }
 .icons
 {
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 #fafaicon
 {
-    padding-bottom: 25%;
+    padding-top: 25%;
 }
-@media only screen and (max-width: 1380px)
+.pagefive p
 {
-    .words
-    {
-        padding-top: 5%;
-    }
+    padding-top: 12%;
 }
-@media only screen and (max-width: 1110px)
+@media screen and (max-width: 1232px)
 {
-    .navbar button
+    .pageone h1 
     {
-        width: 17%;
-        height: 8vh;
-        margin-inline-start: 10px;
-    }
-    h1
-    {
-        font-size: 50px;
+        font-size: 40px;
     }
     .pageone p
     {
-        padding-top: 5vh;
-        font-size: 25px;
-    }
-    .wordsbuttons
-    {
-        width: 200%;
-    }
-    .pagefivewords p
-    {
-        font-size: small;
-    }
-
-}
-@media screen and (max-width: 1080px)
-{
-    .pagefivewords p
-    {
-        font-size: small;
-        padding-top: 5%;
-    }
-    .contacts p
-    {
-        font-size: small;
-        padding-bottom: 10%;
-    }
-    #fafaicon
-    {
-        padding-bottom: 30%;
-    }
-}
-@media screen and (max-width: 1001px)
-{
-    .navbar button
-    {
-        width: 17%;
-        height: 8vh;
-        margin-inline-start: 10px;
-        font-size: medium;
-    }
-    h1
-    {
-        font-size: 30px;
-    }
-    p
-    {
-        padding-top: 5vh;
-        font-size: 25px;
-    }
-    p.description
-    {
-        padding-top: 10%;
-        font-size: 10px;
-        margin-left: -50%;
-    }
-    .pagefivewords p
-    {
-        font-size: small;
-        padding-bottom: 5%;
-    }
-    #fafaicon
-    {
-        padding-bottom: 20%;
-    }
-
-}
-@media only screen and (max-width: 905px)
-{
-    .navbar
-    {
-        width: 70%; 
-        padding-top: 4%;
-        padding-left: 10%;
-    }
-    .words
-    {
-        padding-top: 10%;
-    }
-    .wordsbuttons
-    {
-        padding-left: 0%;
-        width: 210%;
-    }
-}
-@media only screen and (max-width: 762px)
-{
-
-    h1
-    {
-        font-size: 25px;
-    }
-    p
-    {
-        padding-top: 5vh;
         font-size: 20px;
+        padding-bottom: 5vh;
     }
-    .pagefivewords
+    .navbar 
     {
-        font-size: small;
+        width: 60%;
+    }
+
+}
+@media screen and (max-width: 1010px)
+{
+    .navbar 
+    {
+        width: 65%;
     }
 }
-@media only screen and (max-width: 701px)
+@media screen and (max-width: 901px)
 {
     .mainImage
     {
@@ -562,443 +477,121 @@ input:focus, textarea:focus, select:focus{
     {
         display: none;
     }
-    .words
-    {
-        padding-top: 15%;
-        padding-left: 25%;
-    }
-    .pageone h1
-    {
-        font-size: 40px;
-        padding-left: 35%;
-        width: 100%;
-    }
-    .pageone p
-    {
-        padding-top: 10vh;
-        font-size: 20px;
-        padding-left: 35%;
-        width: 100%;
-    }
-    .wordsbuttons
-    {
-        width: 400%; 
-        height: 10vh; 
-        margin-top: 15%;
-        margin-left: -15%;
-        padding-left: 0%;
-        padding-top: 13%; 
-    }
-    .pagefivewords
-    {
-        padding-left: 20%;
-        padding-top: 50%;
-        display: flex;
-    }
     .navbar
     {
-        width: 70%; 
-        height: 10vh;
-        padding-top: 4%;
-        padding-left: 15%;
+        align-content: center;
+        justify-content: center;
+        width: 100%;
     }
     .navbar button
     {
-        width: 15%;
-        font-size: small;
+        font-size: medium;
+        width: 14%;
     }
-    .headingpagetwo
+    .pagetwo h1
     {
+        justify-content: center;
+    }
+    .pagetwopartone
+    {
+        width: 70%;
         padding-left: 10%;
-        padding-right: 10%;
-        margin-top: 20%;
+        padding-top: 10%;
     }
-    .headingpagetwo h1
+    .pagetwoparttwo
     {
-        font-size: 30px;
+        width: 65%;
+        padding-left: 15%;
+        padding-top: 10%;
     }
-    .pagetwoimage1
+    .pagetwo img
     {
-        width: 40%;
-        height: 40%;
-        padding-left: 18%;
+        width: 55%;
+        height: auto;
+    }
+    .imagetwo
+    {
+        margin-left: -5%;
+    }
+    .imagethree
+    {
+        margin-left: -5%;
+    }
+    .opinionone
+    {
+        margin-top: 15%;
+        margin-left: -35%;
+    }
+    .opiniontwo
+    {
+        margin-top: 15%;
+        margin-left: -45%;
+    }
+    .opinionone, .opiniontwo
+    {
+        padding: 20%;
+        width: 50%;
+    
+    }
+    img.imagefive
+    {
+        width: 15%;
+        height: 10vh;
         padding-top: 3%;
     }
-    .opinionone
+    img.imagefour, img.imagesix
     {
-       width: 50%; 
-       height: 30vh; 
-       margin-top: -7%;
-       margin-left:18%;
-       
-    }
-    .opinionone p
-    {
-        padding-top: 10%;
-    }
-    .pagetwoimage2
-    {
-        width: 40%;
-        height: 40%;
-        padding-left: 60%;
-        margin-top: 5%;
-    }
-    .opiniontwo
-    {
-       width: 50%; 
-       height: 30vh; 
-       margin-top: -8%;
-       margin-left:18%;
-    }
-    .opiniontwo p
-    {
-        padding-top: 10%;
-    }
-    .headingpagethree
-    {
-        padding-top: 10%;
-        padding-left: 15%;
-        width: 70%;
-        height: 10%;
-    }
-    .pagethreeimageone
-    {
-        padding-top: 9%;
-        margin-left: -4%;
-    }
-    .pagethreeimageone img
-    {
-        width: 7%;
-        height: 10%;
-        display: inline;
-        margin-inline-start: 20%;
+        width: 15%;
+        height: auto;
     }
     .pagethreetextone, .pagethreetexttwo, .pagethreetextthree
     {
-        margin-top: -7%;
-        margin-left: 55%;
-        margin-right: 30%;
-        width: 10%;
-        height: 10%;
-    }
-    .pagethreetext p
-    {
-        font-size: medium;
-        text-align: center;
-    }
-    .pagethreeimagetwo
-    {
-        padding-top: 5%;
-        margin-left: -4%;
-    }
-   .pagethreeimagetwo img
-    {
-        width: 7%;
-        height: 10%;
-        display: inline;
-        margin-inline-start: 20%;
+        padding-top: 3%;
+        width: 15%;
+        height: 20%;
     }
     .pagefour
     {
-        padding-top: 13%;
-        padding-left: 20%;
-        display: flex;
         flex-direction: column;
     }
-    .signup
+    .itemsundersignup form
     {
-        width: 70%;
-        height: 70vh;
-        margin-right: 20%;
-        margin-bottom: 25%;
-    }
-    .login
-    {
-        width: 70%;
-        height: 70vh;
-        margin-right: 20%;
-        margin-bottom: 10%;
-    }
-    p.mainheading
-    {
-        padding-top: 5%;
-    } 
-    .login p.mainheading
-    {
-        padding-bottom: 17%;
-    }
-
-    .signup p.mainheading
-    {
-        padding-bottom: 9%;
-    }
-    .pagefivewords 
-    {
-        margin-top: -50%;
-        width: 70%;
-        height: 50%;
-        padding-left: 20%;
-    }
-    .pagefivewords p
-    {
-        font-size: small;
-    }
-    .contacts p
-    {
-        padding-bottom: 60%;
-        margin-top: 9%;
-    }
-    #fafaicon
-    {
-        padding-bottom: 40%;
-    }
-    .signup
-    {
-        margin-top: 20%;
-    }
-}
-@media only screen and (max-width: 615px)
-    {
-
-    .navbar
-    {
-        width: 80%; 
-        height: 10vh;
-        padding-top: 4%;
-        padding-left: 14%;
-    }
-    .navbar button
-    {
-        width: 15%;
-        font-size: smaller;
-    }
-    .pagefivewords p
-    {
-        font-size: small;
-        padding-top: 30%;
-    }
-    .pagefivewords p
-    {
-        font-size: medium;
-    }
-    .contacts p
-    {
-        margin-top: 50%;
-        padding-bottom: 100%;
-    }
-    #fafaicon
-    {
-        padding-bottom: 80%;
-    }
-}
-@media only screen and (max-width: 500px)
-{
-    .navbar
-    {
-        width: 85%; 
-        height: 10vh;
-        padding-top: 4%;
-        padding-left: 10%;
-    }
-    .navbar button
-    {
-        width: 15%;
-        font-size: x-small;
-    }
-    h1
-    {
-        font-size: 25px;
-    }
-    p
-    {
-        padding-top: 10vh;
-        font-size: 15px;
-    }
-    .pagefour
-    {
-        padding-top: 13%;
-        padding-left: 10%;
-        display: flex;
-        flex-direction: column;
-    }
-    .signup
-    {
-        width: 90%;
-        height: 70vh;
-        margin-right: 20%;
-        margin-bottom: 25%;
-    }
-    .login
-    {
-        width: 90%;
-        height: 70vh;
-        margin-right: 20%;
-        margin-bottom: 10%;
-    } 
-    .contacts p
-    {
-        padding-bottom: 60%;
-    }
-    .pagefivewords 
-    {
-        margin-top: -50%;
-        width: 20%;
-        height: 50%;
-        padding-left: 20%;
-    }
-    .usefullinks p, .needhelp p
-    {
-
-        color: #000000;
-        font-size: medium;
-        padding-right: 4em;
-        padding-bottom: 10%;
-    }
-
-     
-}
-@media only screen and (max-width: 470px)
-{
-    .pagefivewords 
-    {
-        margin-top: -50%;
-        width: 20%;
-        height: 50%;
-        padding-left: 15%;
-    }
-    .usefullinks p, .needhelp p
-    {
-        padding-right: 4em;
+        padding-top: 20%;
         padding-bottom: 20%;
     }
-    .contacts p 
+    .itemsunderlogin form
     {
-        padding-top: 20%;
-        padding-bottom: 90%;
+        padding-top: 40%;
+        padding-bottom: 30%;
     }
-    #fafaicon
+    .signup
     {
-        padding-bottom: 50%;
+        height: fit-content;
+        margin-left: 15%;
+        margin-right: 15%;
+        margin-bottom: 5%;
     }
-
-}
-@media only screen and (max-width: 379px)
-{
-    .navbar
+    .login
     {
-        width: 90%; 
-        height: 10vh;
-        padding-top: 4%;
-        padding-left: 5%;
-    }
-    .navbar button
-    {
-        width: 14%;
-        font-size: xx-small;      
-        border: transparent;
-        background-color: transparent;
-        border-radius: 0;
-        border-bottom: 2px solid #ffffff;
-        padding-top: 1%;
-    }
-    p 
-    {
-        padding-top: 5vh;
-        font-size: 13px;  
-        
-    }
-    .pagefivewords 
-    {
-        padding-left: 13%;
-    }
-    .pagefivewords p
-    {
-        padding-bottom: 15%;
-    }
-    .usefullinks p, .needhelp p
-    {
-        padding-right: 2em;
-    }
-    .opiniontwo p, .opinionone p
-    {
-        font-size: small;
-        padding-left: 20%;
-        padding-right: 20%;
-        padding-top: 20%;
-    }
-   .pagetwoimage2
-    {
-        padding-left: 53%;
-    }
-    .contacts p
-    {
-        padding-bottom: 90%;
-    }
-    .pagethreetext
-    {
-       width: 30%;
-       height: 20%;
-       margin-top: 0%;
-       display: flex;
-    }
-    .pagethreetextone, .pagethreetexttwo, .pagethreetextthree
-    {
-        margin-top: -5%;
-        margin-left: 50%;
-        margin-right:35%;
-        width: 10%;
-        height: 10%;
-    }
-    .pagethreetext p
-    {
-        font-size: small;
-        text-align: center;
+        height: fit-content;
+        margin-left: 15%;
+        margin-right: 15%;
     }
     .pagefivewords
     {
-        padding-left: 20%;
+        margin-left: -15%;
     }
-    .usefullinks p, .needhelp p
+    .pagetwo
     {
-        font-size: x-small;
-        padding-right: 4em;
+        padding-top: 10%;
     }
-    .contacts p
+    .pagethree
     {
-        font-size: x-small;
-        padding-bottom: 90%;
+        padding-top: 10%;
     }
-    .pagetwoimage1
+    .pagefour
     {
-        width: 60%;
-        height: 60%;
-        padding-left: 15%;
-        padding-top: 8%;
-    }
-    .opinionone
-    {
-       width: 70%; 
-       height: 30vh; 
-       margin-top: -11%;
-       margin-left:18%;
-    }
-    .pagetwoimage2
-    {
-        width: 60%;
-        height: 60%;
-        padding-left: 15%;
-        margin-top: 15%;
-    }
-    .opiniontwo
-    {
-       width: 70%; 
-       height: 30vh; 
-       margin-top: -10%;
-       margin-left:18%;
-    }
-    .signup
-    {
-        margin-top: 20%;
+        padding-top: 15%;
     }
 
 }
