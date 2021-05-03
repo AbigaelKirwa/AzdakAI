@@ -26,7 +26,7 @@ var mybutton = document.getElementById("myBtn");
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
     mybutton.style.display = "block";
   } else {
     mybutton.style.display = "none";
@@ -40,7 +40,22 @@ function topFunction() {
 }
 
 //makes page reload on scrolling
-AOS.init();
+AOS.init({
+    offset: 400,
+    duration: 1000,
+});
+
+//helps to check on whether any element has overflowed
+var docWidth = document.documentElement.offsetWidth;
+[].forEach.call(
+  document.querySelectorAll('*'),
+  function(el) {
+    if (el.offsetWidth > docWidth) {
+      console.log(el);
+    }
+  }
+);
+
 
 
 
