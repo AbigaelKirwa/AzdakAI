@@ -640,3 +640,11 @@ img.bottomimage
         height: 20%;
     }
 }
+@media screen and (max-width: 360px)
+{
+    .navbar button
+    {
+        font-size: xx-small;
+    }
+}
+
