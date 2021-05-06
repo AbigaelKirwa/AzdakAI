@@ -65,6 +65,16 @@ button:hover span:after {
     opacity: 1;
     right: 0;
 }
+#homebtn
+{
+    color: #CF2E5D;
+    background-color: #FFFFFF;
+}
+#signmeup
+{
+    color: #CF2E5D;
+    background-color: #FFFFFF;
+}
 .imageandwords
 {
     display: flex;
